@@ -13,39 +13,39 @@ if (GPA <= 0 || GPA > 4 )
 }
 else if (GPA <= 0.80)
 {
-    printf("Congratulations Your Grade is E\n");
+    printf("Congratulations You got an E\n");
 }
 else if (GPA <= 1.60)
 {
-    printf("Congratulations Your Grade is D\n");
+    printf("Congratulations You got an D\n");
 }
 else if (GPA <= 1.80)
 {
-    printf("Congratulations Your Grade is D+\n");
+    printf("Congratulations You got an D+\n");
 }
 else if (GPA <= 2.00)
 {
-    printf("Congratulations Your Grade is C\n");
+    printf("Congratulations You got an C\n");
 }
 else if (GPA <= 2.40)
 {
-    printf("Congratulations Your Grade is C+\n");
+    printf("Congratulations You got an C+\n");
 }
 else if (GPA <= 2.80)
 {
-    printf("Congratulations Your Grade is B\n");
+    printf("Congratulations You got an B\n");
 }
 else if (GPA <= 3.20)
 {
-    printf("Congratulations Your Grade is B+\n");
+    printf("Congratulations You got an B+\n");
 }
 else if (GPA <= 3.60)
 {
-    printf("Congratulations Your Grade is A\n");
+    printf("Congratulations You got an A\n");
 }
 else
 {
-    printf("Congratulations Your Grade is A+\n");
+    printf("Congratulations You got an A+\n");
 }
 
 
