@@ -20,27 +20,12 @@ The program maps a GPA value to its corresponding letter grade using parallel ar
 3. A loop iterates through predefined GPA thresholds
 4. The corresponding letter grade is printed once a match is found
 
-## Why This Approach
-
-* Easier to maintain and extend
-* More readable than chained conditionals
-* Scales well if grading rules change
-
 ## Requirements
 
-* C compiler (GCC, Clang, or equivalent)
+* C compiler
 
 ## Usage
 
 bash
 gcc grade.c -o grade
 ./grade
-
-
-Enter a GPA when prompted to receive the corresponding letter grade.
-
-## Example Output
-
-
-Enter GPA: 3.6
-Grade: A
