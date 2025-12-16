@@ -1,53 +1,25 @@
 #include <stdio.h>
 
-int main()
-{
-
+int main(void) {
 double GPA;
+const double GPA_Max[] = {0.8, 1.6, 1.8, 2.0, 2.4, 2.8, 3.2, 3.6, 4.0};
+const char *Grades[] = {"E", "D", "D+", "C", "C+", "B", "B+", "A", "A+"};
+
 printf("Input your GPA:");
 scanf("%lf" , &GPA);
 
-if (GPA <= 0 || GPA > 4 )
-{
-    printf("Given GPA is invalid");
-}
-else if (GPA <= 0.80)
-{
-    printf("Congratulations You got an E\n");
-}
-else if (GPA <= 1.60)
-{
-    printf("Congratulations You got an D\n");
-}
-else if (GPA <= 1.80)
-{
-    printf("Congratulations You got an D+\n");
-}
-else if (GPA <= 2.00)
-{
-    printf("Congratulations You got an C\n");
-}
-else if (GPA <= 2.40)
-{
-    printf("Congratulations You got an C+\n");
-}
-else if (GPA <= 2.80)
-{
-    printf("Congratulations You got an B\n");
-}
-else if (GPA <= 3.20)
-{
-    printf("Congratulations You got an B+\n");
-}
-else if (GPA <= 3.60)
-{
-    printf("Congratulations You got an A\n");
-}
-else
-{
-    printf("Congratulations You got an A+\n");
+if (GPA <= 0 || GPA > 4) {
+    printf("Invalid Information\n");
+    return 0;
 }
 
 
+ for (int i = 0; i < 9; i++) {
+    if (GPA <= GPA_Max[i]) {
+        printf("Congratulations You got an %s\n" , Grades[i]);
+        break;
+    } 
+ }
+ 
 return 0;
 }
